@@ -1,0 +1,2 @@
+Nox_robot/nox:Nox_robot/nox_description:my_robot:robot:rplidar_ros
+-DCATKIN_DEVEL_PREFIX=/home/dinhcuong/Desktop/slam_robot/devel -DCMAKE_INSTALL_PREFIX=/home/dinhcuong/Desktop/slam_robot/install -G Unix Makefiles

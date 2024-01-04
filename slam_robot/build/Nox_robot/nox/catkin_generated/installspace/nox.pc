@@ -1,0 +1,8 @@
+prefix=/home/dinhcuong/Desktop/slam_robot/install
+
+Name: nox
+Description: Description of nox
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

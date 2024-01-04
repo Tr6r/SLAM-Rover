@@ -1,0 +1,8 @@
+prefix=/home/dinhcuong/Desktop/slam_robot/devel
+
+Name: mobile_robot_autonomous_navigation
+Description: Description of mobile_robot_autonomous_navigation
+Version: 0.0.0
+Cflags: -I/home/dinhcuong/Desktop/slam_robot/src/Autonomous_Mobile_Robot/mobile_robot_autonomous_navigation/include
+Libs: -L${prefix}/lib 
+Requires: 
