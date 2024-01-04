@@ -1,0 +1,11 @@
+<launch>
+
+	<node name="serial_node" pkg="rosserial_python" type="serial_node.py">
+		<param name="port" value="/dev/ttyUSB0"/>
+	</node>
+<node name="teleop" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" output="screen"/>
+		
+	
+	<!--<include file="$(find rplidar_ros)/launch/rplidar_a1.launch"/>
+	<include file="$(find hector_slam_launch)/launch/tutorial.launch"/>-->
+</launch>

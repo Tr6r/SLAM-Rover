@@ -1,0 +1,48 @@
+<launch>
+				<!--  ************** Odometry ***************  -->
+	<arg name="gui" default="True" />
+	<param name="use_gui" value="$(arg gui)"/>
+	<param name="robot_description" command="cat $(find nox_description)/urdf/nox3.urdf.xacro" />
+	
+
+	<node name="serial_node" pkg="rosserial_python" type="serial_node.py">
+		<param name="port" value="/dev/ttyUSB0"/>
+	</node>
+
+<node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+<node name="odom" pkg="nox" type="odom.py" output="screen" />
+
+
+
+<node name="teleop" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" output="screen"/>
+<include file="$(find nox)/launch/move_base.launch" />
+
+  <include file="$(find nox)/launch/amcl.launch"/>
+
+
+
+	
+<include file="$(find rplidar_ros)/launch/rplidar.launch"/>
+
+<!--
+
+
+	<node name="odom" pkg="nox" type="" />
+  ************** Odometry ***************  
+<arg name="map_file" default="/home/dinhcuong/Desktop/slam_robot/maps/room.yaml"/>
+<node name = "map_server" pkg="map_server" type ="map_server" args="$(arg map_file)"/>
+<arg name="scan_topic" default="/scan"/>
+<arg name="initial_pose_x" default="0.0"/>
+<arg name="initial_pose_y" default="0.0"/>
+<arg name="initial_pose_z" default="0.0"/>
+<node pkg="amcl" type="amcl" name="amcl"/>
+<node name="rviz" pkg="rviz" type="rviz" args="-d '$(find nox)/rviz/slam_robot.rviz'"/>
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(find mobile_robot_autonomous_navigation)/config/nav_config.rviz"/>
+
+-->
+
+
+
+</launch>
+
