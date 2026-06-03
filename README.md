@@ -25,10 +25,10 @@
 <img  width="350" src="https://github.com/Tr6r/SLAM-Rover/blob/main/Image/map.jpg"/>
 </p>
 
-## Core Technologies
-In-progress editing
-
-## 🏗️ Technical Architecture
+## Device Overview
+<p align="left">
+<img width="350" alt="slam_device_chart" src="https://github.com/user-attachments/assets/671a924e-1a44-4368-b7fc-031c5803154d" />
+</p>
 
 ## 🧠 Lessons Learned
 <!--Engineered a robot capable of map scanning, self-localization, and autonomous navigation.
