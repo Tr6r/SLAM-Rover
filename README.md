@@ -17,18 +17,28 @@
 - **Visualization:** Use RViz to visualize the generated map and the robot position.
 ## Achievement
 <p align="left">
-<img width="350" alt="GK_CACDOIDATGIAI_HSUTD2023-1_page-0001" src="https://github.com/user-attachments/assets/fa18cb85-e5af-4fa8-9b89-fe09869c3912" />
+<img width="500" alt="GK_CACDOIDATGIAI_HSUTD2023-1_page-0001" src="https://github.com/user-attachments/assets/fa18cb85-e5af-4fa8-9b89-fe09869c3912" />
 </p>
 
 ## Visualization (RViz)
 <p align="left">
-<img  width="350" src="https://github.com/Tr6r/SLAM-Rover/blob/main/Image/map.jpg"/>
+<img  width="500" src="https://github.com/Tr6r/SLAM-Rover/blob/main/Image/map.jpg"/>
 </p>
 
 ## Device Overview
+
 <p align="left">
-<img width="350" alt="slam_device_chart" src="https://github.com/user-attachments/assets/671a924e-1a44-4368-b7fc-031c5803154d" />
+  <img width="500" alt="slam_device_chart" src="https://github.com/user-attachments/assets/8e39453e-55d6-44f9-b495-49554a9eeaa6" />
+
 </p>
+
+## Localize flow chart
+
+<p align="left">
+  <img width="500" alt="localize_flow_chart" src="https://github.com/user-attachments/assets/1fcf34d8-5702-4c18-bde0-98df836bcd2b" />
+
+</p>
+
 
 ## 🧠 Lessons Learned
 <!--Engineered a robot capable of map scanning, self-localization, and autonomous navigation.
